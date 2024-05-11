@@ -1,8 +1,11 @@
 import React from "react";
-
+import HomeNav from "./navbar/HomeNav";
 function Superheroes() {
     return (
-      <h1>Superheroes Quiz PAGE</h1>
+        <>
+            <HomeNav />
+            <h1>Superheroes Quiz PAGE</h1>
+      </>
     );
   }
   export default Superheroes;
