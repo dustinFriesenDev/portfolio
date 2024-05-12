@@ -1,17 +1,18 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
+import './HomeNavStyles.css';
 
 const HomeNav = () => {
   return (
     <>
-      <nav>
-        <ul>
+      {/* <nav> */}
+        {/* <ul> */}
           <li>
-            <Link to="/"><h1>Home</h1></Link>
+            <Link to="/"><p className="return-home">Home</p></Link>
           </li>
     
-        </ul>
-      </nav>
+        {/* </ul> */}
+      {/* </nav> */}
 
       <Outlet />
     </>

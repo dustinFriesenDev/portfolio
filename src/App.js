@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
 import Nav from "./components/navbar/Nav";
 import Home from "./components/Home";
-import Disney from "./components/Disney";
+import Disney from "./components/disney-princesses/Disney";
 import Superheroes from "./components/Superheroes";
 import './App.css';
 
