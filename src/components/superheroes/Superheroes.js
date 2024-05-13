@@ -1,5 +1,5 @@
 import React from "react";
-import HomeNav from "./navbar/HomeNav";
+import HomeNav from "../navbar/HomeNav";
 function Superheroes() {
     return (
         <>

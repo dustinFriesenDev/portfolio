@@ -6,9 +6,6 @@ const Nav = () => {
     <>
       <nav>
         <ul>
-          {/* <li>
-            <Link to="/">Home</Link>
-          </li> */}
           <li>
             <Link to="/disney_princess_quiz">Disney</Link>
           </li>

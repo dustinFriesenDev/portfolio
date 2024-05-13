@@ -5,15 +5,9 @@ import './HomeNavStyles.css';
 const HomeNav = () => {
   return (
     <>
-      {/* <nav> */}
-        {/* <ul> */}
-          <li>
-            <Link to="/"><p className="return-home">Home</p></Link>
-          </li>
-    
-        {/* </ul> */}
-      {/* </nav> */}
-
+      <li>
+        <Link to="/"><p className="return-home">Home</p></Link>
+      </li>
       <Outlet />
     </>
   )

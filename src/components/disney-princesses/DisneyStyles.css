@@ -1,14 +1,18 @@
-body {
+.disney-app {
     background-color: #fff0f2;
+    text-align: center;
+    overflow-x: hidden;
+    position: relative;
   }
   
-  .App {
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+.disney-app {
+  background-color: #fff0f2;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
   
   
   .App-header {
@@ -29,9 +33,12 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    /* margin: auto; */
     min-width: 300px;
     height: 490px;
+  }
+
+  .disney-height {
+    min-height: 475px;
   }
   
   .question {
@@ -64,9 +71,6 @@ body {
     display: none;
     margin: auto;
   }
-  /* Working on how to make an oval layer so as not to have to alter the img */
-  /* .border {
-  } */
   
   img {
     height: 275px;

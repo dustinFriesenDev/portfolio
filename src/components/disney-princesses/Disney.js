@@ -43,7 +43,7 @@ function Disney() {
   const princessList = princesses.map((e) => {
     if(counter === e.id){
       return (
-        <div key={e.id}>
+        <div className="disney-height" key={e.id}>
           <div className="question" id="question">{e.id}. {e.question}</div>
           <div className='option-container' id="option-container" onClick={correctAnswer}>
             <p className='option o1' id="o1">{e.o1}</p>
@@ -87,7 +87,7 @@ function Disney() {
 
 //HTML Return Statement
   return (
-    <div className="App">
+    <div className="disney-app">
     <HomeNav />
       <header className="App-header">      
         <div>Disney Princess Quiz</div>
