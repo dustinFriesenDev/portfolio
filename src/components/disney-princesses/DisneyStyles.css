@@ -1,11 +1,6 @@
 .disney-app {
-    background-color: #fff0f2;
-    text-align: center;
-    overflow-x: hidden;
-    position: relative;
-  }
-  
-.disney-app {
+  overflow-x: hidden;
+  position: relative;
   background-color: #fff0f2;
   text-align: center;
   height: 100vh;
@@ -45,6 +40,7 @@
     margin: 20px;
     font-size: 1.6rem;
     font-weight: 600;
+    padding: 10px 15px 10px;
   }
   
   .option-container {
@@ -108,7 +104,7 @@
     width: 100px;
   }
   
-  footer {
+  .disney-footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,6 +113,6 @@
     background-color: #FFC5E0;
   }
   
-  footer > small {
+  .disney-footer > small {
     padding: 5px;
   }
