@@ -10,7 +10,6 @@ function App() {
   return (
     <main>
     <Router>
-    
       <Routes>
         <Route exact path="/" element={<Nav />} />
         <Route index element={<Home />} />

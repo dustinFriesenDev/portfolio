@@ -6,7 +6,7 @@ const HomeNav = () => {
   return (
     <>
       <li>
-        <Link to="/"><p className="return-home">Home</p></Link>
+        <Link to="/"><p className="return-home">{'\u21E6'} Back</p></Link>
       </li>
       <Outlet />
     </>

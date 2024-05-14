@@ -77,11 +77,11 @@ function Superheroes() {
             <p className='option o4' id="o4">{e.o4}</p>
           </div>
 
-          <img id="onomatopoeia" src={bang} alt="bang" />
+          <img className="superhero-img" id="onomatopoeia" src={bang} alt="bang" />
 
         {/* Answer */}
           <div className='answer' id="answer">
-            <h3 id="heroName">{e.name}</h3>
+            <h3 className="superhero-h3" id="heroName">{e.name}</h3>
             <p style={{display: "none"}} id="correct">{e.answer}</p>
             <img id="answerImage" src={e.img} alt={e.altText} />
             <img id="graphic" src={e.transition} alt={e.transitionAlt} />

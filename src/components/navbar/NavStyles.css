@@ -1,0 +1,37 @@
+.main-container {
+    border-top: 1px solid black;
+  }
+  
+  /* Modify width of cards here with increasing width percentage. */
+  .project-cards {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+  }
+  
+  figure {
+    border: thin #c0c0c0 solid;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+  }
+  
+  .home-img {
+    width: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+  }

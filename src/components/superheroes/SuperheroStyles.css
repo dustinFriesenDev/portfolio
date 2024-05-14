@@ -1,16 +1,3 @@
-/* body { */
-    /* background-image: linear-gradient(to bottom, #3a1df5, #1a0890); */
-    /* background-color:#1a0890; */
-    /* overflow-x: hidden;
-    font-family: "Grandstander", cursive;
-    font-optical-sizing: auto;
-    font-weight: 700; */
-  /* } */
-  
-  /* a {
-    text-decoration: none;
-    color: white;
-  } */
   .credit {
     text-decoration: none;
     color: white;
@@ -44,8 +31,6 @@
     padding: 25px 15px 15px;
   }
 
- 
-  
   .main-container {
     display: flex;
     flex-direction: column;
@@ -99,7 +84,7 @@
     margin: auto;
   }
   
-  h3 {
+  .superhero-h3 {
     width: 250px;
     margin: 0 auto;
     font-family: "Grandstander", cursive;
@@ -114,7 +99,7 @@
     
   }
   
-  img {
+  .superhero-img {
     height: 275px;
     width: auto;
     border-radius: 35px;

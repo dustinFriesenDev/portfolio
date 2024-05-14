@@ -27,7 +27,6 @@ function Disney() {
         setAddPoint(addPoint - 1);
       }
     }
-    console.log(addPoint);
   }
 
   const nextQuestion = () => {
@@ -36,8 +35,6 @@ function Disney() {
       setScore(score + 1);
     }
     setAddPoint(0);
-    console.log(addPoint);
-    console.log(score);
   }
 
   const princessList = princesses.map((e) => {
@@ -58,7 +55,7 @@ function Disney() {
             <p style={{display: "none"}} id="correct">{e.answer}</p>
             {/* Working on creating a border layer to make the image an oval without having to alter the image. */}
             {/* <div className='border'></div> */}
-            <img src={e.img} alt={e.altText} />
+            <img className="disney-img" src={e.img} alt={e.altText} />
             <p className='option btn-next' id="btnNext" onClick={nextQuestion}>Next</p>
           </div>
         </div>
