@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import HomeNav from "../navbar/HomeNav";
 import './SuperheroStyles.css';
 import heroes from './superheroDataSheet.json';
@@ -11,7 +11,6 @@ function Superheroes() {
 
   const correctAnswer = (e) => {
     const oc = document.getElementById("option-container");
-    const answer = document.getElementById("answer");
     const option = e.target;
     const onomatopoeia = document.getElementById("onomatopoeia")
     const correct = document.getElementById("correct");

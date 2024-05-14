@@ -3,8 +3,6 @@ import { Outlet, Link } from "react-router-dom";
 import "./NavStyles.css";
 
 const Nav = () => {
-
-
   return (
     <>
       <div className="main-container">
