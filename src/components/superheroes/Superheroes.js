@@ -83,8 +83,8 @@ function Superheroes() {
           <div className='answer' id="answer">
             <h3 className="superhero-h3" id="heroName">{e.name}</h3>
             <p style={{display: "none"}} id="correct">{e.answer}</p>
-            <img id="answerImage" src={e.img} alt={e.altText} />
-            <img id="graphic" src={e.transition} alt={e.transitionAlt} />
+            <img className="superhero-img" id="answerImage" src={e.img} alt={e.altText} />
+            <img className="superhero-img" id="graphic" src={e.transition} alt={e.transitionAlt} />
             <p className='option btn-next' id="btnNext" onClick={()=>{
               nextQuestion(e.transitionName);
             }}>Next</p>

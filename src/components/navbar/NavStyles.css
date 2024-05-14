@@ -1,37 +1,53 @@
 .main-container {
+    width: 100%;
     border-top: 1px solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .instructions {
+    font-size: 1.2rem;
+    flex: 0.45;
+    margin-top: 25px;
   }
   
   /* Modify width of cards here with increasing width percentage. */
   .project-cards {
-    width: 45%;
     display: flex;
-    justify-content: space-around;
-    margin: auto;
+    flex: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
   }
   
   figure {
+    width: 200px;
+    height: auto;
+    background-color: rgb(245, 244, 238);
     border: thin #c0c0c0 solid;
     border-radius: 10px;
     display: flex;
     flex-flow: column;
-    padding: 5px;
-    max-width: 220px;
     margin: auto;
+    padding: 10px;
   }
   
   .home-img {
-    width: auto;
-    max-height: 200px;
-    object-fit: cover;
+    height: auto;
+    width: 190px;
+    margin: auto;
+    object-fit: contain;
     border-radius: 5px 5px 0 0;
   }
   
   figcaption {
+    width: 190px;
+    margin: auto;
     background-color: #222;
     color: #fff;
     font: italic smaller sans-serif;
-    padding: 3px;
     text-align: center;
     border-radius: 0 0 5px 5px;
   }

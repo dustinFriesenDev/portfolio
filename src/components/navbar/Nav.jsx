@@ -8,11 +8,15 @@ const Nav = () => {
   return (
     <>
       <div className="main-container">
-        <ul className="project-cards">
+        <div className="instructions">
+          <p>Select a quiz below and test your knowledge.</p>
+          <small>**These quizzes were created for a five year old** </small>
+        </div>
+        <div className="project-cards">
           <li>
             <Link to="/disney_princess_quiz">
               <figure>
-               <img className="home-img" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1535cece-1e83-418f-b157-56a86c250a55/da3kz1v-7acf7410-3b4b-495d-a5da-4ed020f5ecd9.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE1MzVjZWNlLTFlODMtNDE4Zi1iMTU3LTU2YTg2YzI1MGE1NVwvZGEza3oxdi03YWNmNzQxMC0zYjRiLTQ5NWQtYTVkYS00ZWQwMjBmNWVjZDkuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.C1faoLLPpJbMYz77WBnzAJLTUqJrxaMY899MeHu46AI" alt="disney princess in a strong pose."/>
+               <img className="home-img" src="https://external-preview.redd.it/75SYx7gXSb50vPHp69Yvpu893Uc89NQp0JALKZv4gIk.jpg?auto=webp&s=54e756eb94082821d47a1ea65be29ea0fac7f219" alt="disney princess in a strong pose."/>
                <figcaption>Disney Princess Quiz</figcaption>
               </figure>
             </Link>
@@ -20,12 +24,12 @@ const Nav = () => {
           <li>
             <Link className="card" to="/superheroes_quiz">
             <figure>
-               <img className="home-img" src="https://i.pinimg.com/736x/2e/7a/bc/2e7abcd94b8364be75ad0903b76fda06.jpg" alt="JLA and Marvel heroes standing in a strong pose."/>
+               <img className="home-img" src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/07/The-15-Best-Marvel-DC-Crossovers-Of-All-Time-Ranked.jpg" alt="JLA and Marvel heroes standing in a strong pose."/>
                 <figcaption>Superhero Quiz</figcaption>
               </figure>
             </Link>
           </li>
-        </ul>
+        </div>
       </div>
 
       <Outlet />
