@@ -6,7 +6,7 @@
   .superhero-app {
     position: relative;
     overflow-x: hidden;
-    font-family: "Grandstander", cursive;
+    font-family: "Grandstander", "Kalam", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     text-align: center;
@@ -18,7 +18,7 @@
   
   
   .superhero-header {
-    font-family: "Grandstander", cursive;
+    font-family: "Grandstander", "Kalam", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-size: 80px;
@@ -46,7 +46,7 @@
   .question {
     margin: 20px;
     font-size: 1.6rem;
-    font-family: "Grandstander", cursive;
+    font-family: "Grandstander", "Kalam", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     max-width: 600px;
@@ -87,7 +87,7 @@
   .superhero-h3 {
     width: 250px;
     margin: 0 auto;
-    font-family: "Grandstander", cursive;
+    font-family: "Grandstander", "Kalam", sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
     color:#1a0890;
