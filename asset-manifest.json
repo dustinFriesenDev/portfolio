@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2835fd42.css",
+    "main.css": "/portfolio/static/css/main.3dcee495.css",
     "main.js": "/portfolio/static/js/main.ff66c264.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/vecteezy_winner-comic-explosion-with-red-and-yellow-colors-speech_24800507.png": "/portfolio/static/media/vecteezy_winner-comic-explosion-with-red-and-yellow-colors-speech_24800507.8944277cb2acbd14460d.png",
     "index.html": "/portfolio/index.html",
-    "main.2835fd42.css.map": "/portfolio/static/css/main.2835fd42.css.map",
+    "main.3dcee495.css.map": "/portfolio/static/css/main.3dcee495.css.map",
     "main.ff66c264.js.map": "/portfolio/static/js/main.ff66c264.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2835fd42.css",
+    "static/css/main.3dcee495.css",
     "static/js/main.ff66c264.js"
   ]
 }
