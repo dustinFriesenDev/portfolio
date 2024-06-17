@@ -1,13 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import HomeNav from "../navbar/HomeNav";
 import './SuperheroStyles.css';
 import heroes from './superheroDataSheet.json';
 import bang from "./comic_graphics/vecteezy_winner-comic-explosion-with-red-and-yellow-colors-speech_24800507.png";
+import platform from "platform";
 
 function Superheroes() {
   const [counter, setCounter] = useState(1);
   const [addPoint, setAddPoint] = useState(0);
   const [score, setScore] = useState(0);
+  const [browserName, setBrowserName] = useState("");
+
+  useEffect(() => {
+    setBrowserName(platform.name);
+  },[])
 
   const correctAnswer = (e) => {
     const oc = document.getElementById("option-container");
@@ -42,9 +48,13 @@ function Superheroes() {
   function graphicTransition(t) {
     const graphic = document.getElementById("graphic");
     const answerImage = document.getElementById('answerImage');
-    answerImage.style.display = "none";
-    graphic.style.display = "inline";
-    graphic.setAttribute("class", t );
+    
+    if(browserName!=='Safari'){
+      answerImage.style.display = "none";
+      graphic.style.display = "inline-block";
+      graphic.setAttribute("class", t );
+    }
+    
   }
 
   function nextId(){
@@ -57,8 +67,7 @@ function Superheroes() {
       setScore(score + 1);
     }
     setAddPoint(0);
-    setTimeout(nextId, 1000);
-    
+    setTimeout(nextId, 1100);
   }
 
   
@@ -74,6 +83,7 @@ function Superheroes() {
             <p className='option o2' id="o2">{e.o2}</p>
             <p className='option o3' id="o3">{e.o3}</p>
             <p className='option o4' id="o4">{e.o4}</p>
+            <p>{browserName}</p>
           </div>
 
           <img className="superhero-img" id="onomatopoeia" src={bang} alt="bang" />
@@ -83,7 +93,7 @@ function Superheroes() {
             <h3 className="superhero-h3" id="heroName">{e.name}</h3>
             <p style={{display: "none"}} id="correct">{e.answer}</p>
             <img className="superhero-img" id="answerImage" src={e.img} alt={e.altText} />
-            <img className="superhero-img" id="graphic" src={e.transition} alt={e.transitionAlt} />
+            <img className="superhero-img" id="graphic" style={{display: "none"}} src={e.transition} alt={e.transitionAlt} />
             <p className='option btn-next' id="btnNext" onClick={()=>{
               nextQuestion(e.transitionName);
             }}>Next</p>

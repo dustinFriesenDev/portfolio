@@ -127,41 +127,70 @@
   }
   
   .add-onomatopoeia {
-    animation: onomatopoeia .8s;
+    -webkit-animation-name: onomatopoeia;
+    -webkit-animation-duration: .8s;
+    animation-name: onomatopoeia;
+    animation-duration: .8s;
+  }
+  
+  @-webkit-keyframes onomatopoeia {
+    100% { -webkit-transform: scale(4); }
   }
   
   @keyframes onomatopoeia {
-    100% { transform: scale(4); }
+    100% { 
+      transform: scale(4);
+    }
   }
+
   #graphic {
-    display: none;
+    display: block;
     height: 275px;
     width: auto;
     border-radius: 35px;
   }
   
   .fly-right {
-    animation: straight-right 1.1s;
+    animation: 1.2s straight-right;
   }
   
   @keyframes straight-right {
-    0% { transform: translateX(0); }
-    50% { transform: translateX(0); }
-    100%{ transform: translateX(350%) }  
+    0% { 
+      -webkit-transform: translateX(0);
+      transform: translateX(0); 
+    }
+    50% { 
+      -webkit-transform: translateX(0);
+      transform: translateX(0); 
+    }
+    100% { 
+      -webkit-transform: translateX(350%);
+      transform: translateX(350%) 
+    }  
   }
   
   .fly-left {
-    animation: straight-left 1.1s;
+    -webkit-animation: 1.2s straight-left;
+    animation: 1.2s straight-left;
   }
   
   @keyframes straight-left {
-    0% { transform: translateX(0); }
-    50% { transform: translateX(0); }
-    100%{ transform: translateX(-350%) }  
+    0% { 
+      -webkit-transform: translateX(0);
+      transform: translateX(0); 
+    }
+    50% {
+      -webkit-transform: translateX(0); 
+      transform: translateX(0); 
+    }
+    100% {
+      -webkit-transform: translateX(-350%); 
+      transform: translateX(-350%); 
+    }  
   }
   
   .fly-up {
-    animation: straight-up 1.1s;
+    animation: 1.2s straight-up;
   }
   
   @keyframes straight-up {
@@ -171,7 +200,7 @@
   }
   
   .disappear {
-    animation: change-opacity 1.1s;
+    animation: 1.2s change-opacity;
   }
   
   @keyframes change-opacity {
@@ -181,7 +210,7 @@
   }
   
   .swing-right {
-    animation: catenary-right 1.1s;
+    animation: 1s catenary-right;
   }
   
   @keyframes catenary-right {
@@ -191,7 +220,7 @@
   }
   
   .swing-left {
-    animation: catenary-left 1.1s;
+    animation: 1.2s catenary-left;
   }
   
   @keyframes catenary-left {
@@ -201,7 +230,7 @@
   }
   
   .flash-blur {
-    animation: flash 1.1s;
+    animation: 1s flash;
   }
   
   @keyframes flash {
