@@ -48,13 +48,9 @@ function Superheroes() {
   function graphicTransition(t) {
     const graphic = document.getElementById("graphic");
     const answerImage = document.getElementById('answerImage');
-    
-    if(browserName!=='Safari'){
-      answerImage.style.display = "none";
-      graphic.style.display = "inline-block";
-      graphic.setAttribute("class", t );
-    }
-    
+    answerImage.style.display = "none";
+    graphic.style.display = "inline-block";
+    graphic.setAttribute("class", t );
   }
 
   function nextId(){
@@ -83,7 +79,6 @@ function Superheroes() {
             <p className='option o2' id="o2">{e.o2}</p>
             <p className='option o3' id="o3">{e.o3}</p>
             <p className='option o4' id="o4">{e.o4}</p>
-            <p>{browserName}</p>
           </div>
 
           <img className="superhero-img" id="onomatopoeia" src={bang} alt="bang" />
