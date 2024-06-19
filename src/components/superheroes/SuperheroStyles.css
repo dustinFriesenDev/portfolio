@@ -149,11 +149,13 @@
   }
   
   @-webkit-keyframes onomatopoeia {
-    100% { -webkit-transform: scale(4); }
+    100% { -webkit-transform: scale(3); }
   }
   
   @keyframes onomatopoeia {
-    100% { transform: scale(4); }
+    0% { transform: scale(1); }
+    50% { transform: scale(2);}
+    100% { transform: scale(2); }
   }
 
   #graphic {
