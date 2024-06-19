@@ -28,7 +28,7 @@
     justify-content: start;
     color: #1a0890;
     text-shadow: -1px 1px black;
-    padding: 25px 15px 15px;
+    padding: 45px 15px 15px;
   }
 
   .main-container {
@@ -153,9 +153,7 @@
   }
   
   @keyframes onomatopoeia {
-    100% { 
-      transform: scale(4);
-    }
+    100% { transform: scale(4); }
   }
 
   #graphic {
@@ -166,6 +164,7 @@
   }
   
   .fly-right {
+    -webkit-animation: straight-right 1.2s;
     animation: 1.2s straight-right;
   }
   
@@ -205,9 +204,16 @@
   }
   
   .fly-up {
+    -webkit-animation: straight-up 1.2s;
     animation: 1.2s straight-up;
   }
   
+  @-webkit-keyframes straight-up {
+    0% { -webkit-transform: translateY(0); }
+    50% { -webkit-transform: translateX(0); }
+    100%{ -webkit-transform: translateY(-350%) }  
+  }
+
   @keyframes straight-up {
     0% { transform: translateY(0); }
     50% { transform: translateX(0); }
@@ -215,9 +221,16 @@
   }
   
   .disappear {
+    -webkit-animation: change-opacity 1.2s;
     animation: 1.2s change-opacity;
   }
   
+  @-webkit-keyframes change-opacity {
+    0% { -webkit-opacity: 1; }
+    50% { -webkit-opacity: 1; }
+    100%{ -webkit-opacity: 0; }  
+  }
+
   @keyframes change-opacity {
     0% { opacity: 1; }
     50% { opacity: 1; }
@@ -225,9 +238,16 @@
   }
   
   .swing-right {
-    animation: 1s catenary-right;
+    -webkit-animation: catenary-right 1.2s;
+    animation: 1.2s catenary-right;
   }
   
+  @-webkit-keyframes catenary-right {
+    0% { -webkit-transform: rotate(0deg) translateY(0%) rotate(0deg);}
+    50% { -webkit-transform: rotate(0deg) translateY(0%) rotate(0deg);}
+    100% { -webkit-transform: rotate(-180deg) translateY(500%) rotate(180deg); }
+  }
+
   @keyframes catenary-right {
     0% { transform: rotate(0deg) translateY(0%) rotate(0deg);}
     50% { transform: rotate(0deg) translateY(0%) rotate(0deg);}
@@ -235,9 +255,16 @@
   }
   
   .swing-left {
+    -webkit-animation: catenary-left 1.2s;
     animation: 1.2s catenary-left;
   }
   
+  @-webkit-keyframes catenary-left {
+    0% { -webkit-transform: rotate(0deg) translateY(0%) rotate(0deg);}
+    50% { -webkit-transform: rotate(0deg) translateY(0%) rotate(0deg);}
+    100% { -webkit-transform: rotate(180deg) translateY(500%) rotate(-180deg); }
+  }
+
   @keyframes catenary-left {
     0% { transform: rotate(0deg) translateY(0%) rotate(0deg);}
     50% { transform: rotate(0deg) translateY(0%) rotate(0deg);}
@@ -245,9 +272,18 @@
   }
   
   .flash-blur {
-    animation: 1s flash;
+    -webkit-animation: flash 1.2s;
+    animation: 1.2s flash;
   }
   
+  @-webkit-keyframes flash {
+    0% { -webkit-transform: translateX(0); }
+    25% { -webkit-transform: translateX(0); }
+    50% { -webkit-transform: translateX(350%); }
+    75% { -webkit-transform: translateX(-700%); }
+    100% { -webkit-transform: translateX(700%); }
+  }
+
   @keyframes flash {
     0% { transform: translateX(0); }
     25% { transform: translateX(0); }
@@ -284,4 +320,11 @@
   
   .superhero-footer > small {
     padding: 5px;
+  }
+
+  @media screen and (max-width: 414px) {
+    .superhero-header {
+      font-size: 60px;
+      padding: 45px 15px 15px;
+    }
   }
